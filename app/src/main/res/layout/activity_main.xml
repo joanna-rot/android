@@ -4,21 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context="com.example.myfirstapp.MainActivity">
 
     <EditText android:id="@+id/edit_message"
-        android:layout_width="0dp"
-        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:text="0"
         android:layout_height="wrap_content"
         android:hint="@string/edit_message" />
 
     <Button
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_send"
         android:onClick="sendMessage"/>
 
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:text="@string/button_upp"
+        android:onClick="sendUpp"/>
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:text="@string/button_down"
+        android:onClick="sendDown"/>
+
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:text="@string/button_zero"
+        android:onClick="sendZero"/>
 
 </LinearLayout>
 

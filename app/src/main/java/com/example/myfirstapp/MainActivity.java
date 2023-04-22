@@ -25,4 +25,29 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(MESSAGE_KEY, message);
         startActivity(intent);
     }
+
+    public void sendUpp (View view) {
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        EditText editText = (EditText) findViewById(R.id.edit_message);
+        String message = editText.getText().toString();
+        intent.putExtra(MESSAGE_KEY, message);
+        startActivity(intent);
+    }
+
+    public void sendDown (View view) {
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        EditText editText = (EditText) findViewById(R.id.edit_message);
+        String message = editText.getText().toString();
+        intent.putExtra(MESSAGE_KEY, message);
+        startActivity(intent);
+    }
+
+    public void sendZero (View view) {
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        EditText editText = (EditText) findViewById(R.id.edit_message);
+        String message = editText.getText().toString();
+        intent.putExtra(MESSAGE_KEY, message);
+        startActivity(intent);
+    }
+
 }
